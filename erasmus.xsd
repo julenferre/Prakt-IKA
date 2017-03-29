@@ -19,12 +19,12 @@
             <xsd:element name="abizenak" type="xsd:string"/>
             <xsd:element name="jaioteguna" type="xsd:date"/>
             <xsd:element name="helbidea" type="helbideaT"/>
-            <xsd:element name="eposta" type="xsd:string"/>
-            <xsd:element name="telefonoa" type="xsd:string"/>
+            <xsd:element name="eposta" type="xsd:string" maxOccurs="unbounded"/>
+            <xsd:element name="telefonoa" type="xsd:string" />
             <xsd:element name="notak" type="notakT"/>
-            <xsd:element name="praktikak" type="praktikakT"/>
-            <xsd:element name="hizkuntzak" type="hizkuntzakT"/>
-            <xsd:element name="besteak" type="xsd:string"/>
+            <xsd:element name="praktikak" type="praktikakT" minOccurs="0"/>
+            <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="0"/>
+            <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
         <xsd:attribute name="nan" type="xsd:string" use="required"/>
     </xsd:complexType>
@@ -33,43 +33,54 @@
         <xsd:sequence>
             <xsd:element name="kalea" type="xsd:string"/>
             <xsd:element name="portala" type="xsd:string"/>
-            <xsd:element name="pisua" type="xsd:string"/>
-            <xsd:element name="atea" type="xsd:string"/>
-            <xsd:element name="besteak" type="xsd:string"/>
+            <xsd:element name="pisua" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="atea" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="besteak" type="xsd:string" minOccurs="0"/>
             <xsd:element name="hiria" type="xsd:string"/>
             <xsd:element name="probintzia" type="xsd:string"/>
-            <xsd:element name="herrialdea" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
     
     <xsd:complexType name="notakT">
-        <xsd:sequence>            
-            <xsd:element name="irakasgaia" type="irakasgaiaT"/>            
-        </xsd:sequence>
-        <xsd:attribute name="urtea" type="xsd:string" use="required"/>
-    </xsd:complexType>
-    
-    <xsd:complexType name="irakasgaiaT">
         <xsd:sequence>
-            <xsd:element name="izena" type="xsd:string"/>
-            <xsd:element name="nota" type="xsd:decimal"/>
-        </xsd:sequence>
+            <xsd:element name="nota" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>            
+                        <xsd:extension base="xsd:double">
+                            <xsd:attribute name="irakasgaia" type="xsd:string"/>
+                        </xsd:extension>            
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>  
     </xsd:complexType>
     
     <xsd:complexType name="praktikakT">
-        <xsd:sequence>            
-            <xsd:element name="urtea" type="xsd:integer"/>
-            <xsd:element name="enpresa" type="xsd:string"/>
-            <xsd:element name="postua" type="xsd:string"/>
-            <xsd:element name="iraupena" type="xsd:string"/>
+        <xsd:sequence>
+            <xsd:element name="praktika" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="enpresa" type="xsd:string"/>
+                        <xsd:element name="postua" type="xsd:string"/>
+                        <xsd:element name="iraupena" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>            
         </xsd:sequence>
     </xsd:complexType>
     
     <xsd:complexType name="hizkuntzakT">
-        <xsd:sequence>            
-            <xsd:element name="izena" type="xsd:string"/>
-            <xsd:element name="maila" type="xsd:string"/>
-        </xsd:sequence>
+        <xsd:sequence>
+            <xsd:element name="hizkuntza" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>            
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute name="izena" type="xsd:string"/>
+                        </xsd:extension>            
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>  
     </xsd:complexType>
     
 </xsd:schema>
