@@ -7,9 +7,9 @@
     <xsd:element name="erasmus">
         <xsd:complexType>
 			<xsd:sequence>				
-			    <xsd:element name="ikaslea" type="ikasleaT"/>
+			    <xsd:element name="ikaslea" type="ikasleaT" minOccurs="1" maxOccurs="unbounded"/>
 			</xsd:sequence>
-            <xsd:attribute name="urtea" type="xsd:integer" use="required"/>
+            <xsd:attribute name="herrialdea" type="xsd:string" use="required"/>
 		</xsd:complexType>
     </xsd:element>
     
