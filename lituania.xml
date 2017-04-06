@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<?oxygen SCHSchema="murrizpenak.sch" type="xml"?>-->
-<es:erasmus
+<es:erasmus plazaKop="3"
     xmlns="www.ehu.eus/lituania"
     xmlns:es="www.ehu.eus/erasmus"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -21,19 +21,20 @@
             <es:nota irakasgaia="IKA">10</es:nota>
             <es:nota irakasgaia="SGI">5</es:nota>
         </es:notak>
-        <es:praktikak>
-            <praktika>
-                <es:enpresa>Gulag</es:enpresa>
-                <es:postua>Harrotza</es:postua>
-                <hasieraData>1994-06-14</hasieraData>
-                <bukaeraData>1994-07-14</bukaeraData>
-            </praktika>
-        </es:praktikak>
+        
         <es:hizkuntzak>
             <es:hizkuntza izena="ingelesa">B2</es:hizkuntza>
             <es:hizkuntza izena="errusiera">B2</es:hizkuntza>
         </es:hizkuntzak>
-        
+        <es:besteak>dssdsd</es:besteak>
+        <praktikak>
+            <praktika>
+                <es:enpresa>Gulag</es:enpresa>
+                <es:postua>Harrotza</es:postua>
+                <HasieraData>1994-06-14</HasieraData>
+                <BukaeraData>1994-07-14</BukaeraData>
+            </praktika>
+        </praktikak>
     </lituaniaIkaslea>
     
 </es:erasmus>
