@@ -90,7 +90,7 @@
     <pattern>
         <rule id="solairuAtea" context="era:helbidea[era:solairua]">
             <assert id="solairuAteaA" test="era:atea">
-                Ikasle gehiegi daude (ikusi plaza kopurua)
+                Eraikin bateko solairuetako batean bizitzen dena atea zehaztu behar dute.
             </assert>
         </rule>
     </pattern>
