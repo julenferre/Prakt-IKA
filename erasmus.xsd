@@ -26,7 +26,7 @@
             <xsd:element name="telefonoa" type="xsd:string" maxOccurs="unbounded"/>
             <xsd:element name="notak" type="notakT"/>
             <xsd:element name="praktikak" type="praktikakT" minOccurs="0"/>
-            <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="0"/>
+            <xsd:element name="hizkuntzak" type="hizkuntzakT" />
             <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
         <xsd:attribute name="nan" type="xsd:string" use="required"/>
