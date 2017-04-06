@@ -47,7 +47,7 @@
         <xsd:sequence>
             <xsd:element name="kalea" type="xsd:string"/>
             <xsd:element name="portala" type="xsd:string"/>
-            <xsd:element name="pisua" type="xsd:string" minOccurs="0" nillable="true"/>
+            <xsd:element name="solairua" type="xsd:string" minOccurs="0" nillable="true"/>
             <xsd:element name="atea" type="xsd:string" minOccurs="0" nillable="true"/>
             <xsd:element name="besteak" type="xsd:string" minOccurs="0" nillable="true"/>
             <xsd:element name="hiria" type="xsd:string"/>

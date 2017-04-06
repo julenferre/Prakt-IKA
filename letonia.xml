@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen  SCHSchema="murrizpenak.sch" type="xml"?>
-<erasmus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="www.ehu.eus/erasmus"
+<era:erasmus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:era="www.ehu.eus/erasmus"
+    xmlns="www.ehu.eus/letonia"
     xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd">
     
-    <letoniaIkaslea nan="12345678P">
-        <izena>Nikolai</izena>
-        <abizenak>Putin Cyka</abizenak>
-        <jaioteguna>1998-02-23</jaioteguna>
-        <helbidea>
-            <kalea>kalea</kalea>
-            <portala>2</portala>
-            <pisua>3</pisua>
-            <atea>izq.</atea>
-            <hiria>Riga</hiria>
-            <probintzia>Riga</probintzia>
-        </helbidea>
-        <eposta>cykablyat@gmail.com</eposta>
-        <eposta>nikolaicb01@gmail.com</eposta>
-        <telefonoa>789456123</telefonoa>
-        <notak>
-            <nota irakasgaia="SGI">10.0</nota>
-            <nota irakasgaia="IKA">8.7</nota>
-        </notak>
-        <praktikak>
+    <letoniaIkaslea kodea="A1" nan="12345678P">
+        <era:izena>Nikolai</era:izena>
+        <era:abizenak>Putin Cyka</era:abizenak>
+        <era:jaioteguna>1998-02-23</era:jaioteguna>
+        <era:helbidea>
+            <era:kalea>kalea</era:kalea>
+            <era:portala>2</era:portala>
+            <era:solairua>3</era:solairua>
+            <era:atea>izq.</era:atea>
+            <era:hiria>Riga</era:hiria>
+            <era:probintzia>Riga</era:probintzia>
+        </era:helbidea>
+        <era:eposta>cykablyat@gmail.com</era:eposta>
+        <era:eposta>nikolaicb01@gmail.com</era:eposta>
+        <era:telefonoa>789456123</era:telefonoa>
+        <era:notak>
+            <era:nota irakasgaia="SGI">10.0</era:nota>
+            <era:nota irakasgaia="IKA">8.7</era:nota>
+        </era:notak>
+        <era:praktikak>
             <praktika>
-                <enpresa>newRed</enpresa>
-                <postua>sare sozialen zuzendaria</postua>
-                <iraupena>6 hilabete</iraupena>
+                <era:enpresa>newRed</era:enpresa>
+                <era:postua>sare sozialen zuzendaria</era:postua>
+                <era:iraupena>6 hilabete</era:iraupena>
             </praktika>
-        </praktikak>
-        <hizkuntzak>
-            <hizkuntza izena="letoniera">C2</hizkuntza>
-            <hizkuntza izena="english">C1</hizkuntza>
-        </hizkuntzak>
+        </era:praktikak>
+        <era:hizkuntzak>
+            <era:hizkuntza izena="letoniera">C2</era:hizkuntza>
+            <era:hizkuntza izena="english">C1</era:hizkuntza>
+        </era:hizkuntzak>
     </letoniaIkaslea>
-</erasmus>
+</era:erasmus>
