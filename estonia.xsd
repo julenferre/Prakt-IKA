@@ -5,17 +5,18 @@
         - Jatorrizko unibertsitatea
     --> 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
-    xmlns="www.ehu.eus/erasmus"
-    targetNamespace="www.ehu.eus/erasmus"
+    xmlns="www.ehu.eus/estonia"
+    xmlns:era="www.ehu.eus/erasmus"
+    targetNamespace="www.ehu.eus/estonia"
     elementFormDefault="qualified">
     
-    <xsd:include schemaLocation="erasmus.xsd"/>
+    <xsd:import namespace="www.ehu.eus/erasmus" schemaLocation="erasmus.xsd"/>
     
-    <xsd:element name="estoniaIkaslea" type="estoniaT" substitutionGroup="ikaslea" />
+    <xsd:element name="estoniaIkaslea" type="estoniaT" substitutionGroup="era:ikaslea" />
     
     <xsd:complexType name="estoniaT">
         <xsd:complexContent>
-            <xsd:extension base="ikasleaT">
+            <xsd:extension base="era:ikasleaT">
                 <xsd:sequence>
                     <xsd:element name="gidaBaimena" type="gidaBaimenaT"/>
                     <xsd:element name="jatorrizkoUni" type="xsd:string"/>

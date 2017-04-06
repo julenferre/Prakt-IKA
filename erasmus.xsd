@@ -10,6 +10,7 @@
             <xsd:sequence>				
                 <xsd:element ref="ikaslea" minOccurs="1" maxOccurs="unbounded"/>
             </xsd:sequence>
+            <xsd:attribute name="plazaKop" type="xsd:integer" use="required"/>
         </xsd:complexType>
     </xsd:element>
     <xsd:element name="ikaslea" type="ikasleaT" />
