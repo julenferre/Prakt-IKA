@@ -6,13 +6,28 @@
     elementFormDefault="qualified">
     
     <xsd:include schemaLocation="erasmus.xsd"/>
+        
+    <xsd:complexType name="PraktikaQ">
+            <xsd:complexContent>
+                <xsd:restriction base="PraktikaT">
+                    <xsd:sequence>
+                        <xsd:element name="enpresa" type="xsd:string"/>
+                        <xsd:element name="postua" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:restriction>
+            </xsd:complexContent>
+     </xsd:complexType>
     
-    <!--
-        - 
-        - 
-    --> 
-
-    
+    <xsd:complexType name="PraktikaW">
+        <xsd:complexContent>
+            <xsd:extension base="PraktikaQ">
+                <xsd:sequence>
+                    <xsd:element name="HasieraData" type="xsd:string"></xsd:element>
+                    <xsd:element name="BukaeraData" type="xsd:string"></xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
    
     
 </xsd:schema>
