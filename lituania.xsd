@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
-    xmlns="www.ehu.eus/erasmus"
-    targetNamespace="www.ehu.eus/erasmus"
+    xmlns="www.ehu.eus/lituania"
+    xmlns:es="www.ehu.eus/erasmus"
+    targetNamespace="www.ehu.eus/lituania"
     elementFormDefault="qualified">
     
-    <xsd:include schemaLocation="erasmus.xsd"/>
-    <xsd:element name="lituaniaIkaslea" type="lituaniaT" substitutionGroup="ikaslea" />
+    <xsd:import namespace="www.ehu.eus/erasmus" schemaLocation="erasmus.xsd"/>
+    <xsd:element name="lituaniaIkaslea" type="lituaniaT" substitutionGroup="es:ikaslea" />
     <xsd:complexType name="PraktikaQ">
-            <xsd:complexContent>
-                <xsd:restriction base="PraktikaT">
-                    <xsd:sequence>
-                        <xsd:element name="enpresa" type="xsd:string"/>
-                        <xsd:element name="postua" type="xsd:string"/>
-                    </xsd:sequence>
-                </xsd:restriction>
-            </xsd:complexContent>
-     </xsd:complexType>
+        <xsd:complexContent>
+            <xsd:restriction base="es:PraktikaT">
+                <xsd:sequence>
+                    <xsd:element name="enpresa" type="xsd:string"/>
+                    <xsd:element name="postua" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
     
     <xsd:complexType name="PraktikaW">
         <xsd:complexContent>
@@ -28,20 +29,21 @@
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
-   
+    
     <xsd:complexType name="lituaniaT">
         <xsd:complexContent>
-            <xsd:restriction base="ikasleaT">
+            <xsd:restriction base="es:ikasleaT">
                 <xsd:sequence>
-                    <xsd:element name="izena" type="xsd:string"/>
-                    <xsd:element name="abizenak" type="xsd:string"/>
-                    <xsd:element name="jaioteguna" type="xsd:date"/>
-                    <xsd:element name="helbidea" type="helbideaT"/>
-                    <xsd:element name="eposta" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
-                    <xsd:element name="telefonoa" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
-                    <xsd:element name="notak" type="notakT"/>
-                    <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="1"/>
-                    <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="es:izena" />
+                    <xsd:element ref="es:abizenak" />
+                    <xsd:element ref="es:jaioteguna" />
+                    <xsd:element ref="es:helbidea" />
+                    <xsd:element ref="es:eposta" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="es:telefonoa"  minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="es:notak" />
+                    <xsd:element ref="es:praktikak"  minOccurs="0"/>
+                    <xsd:element ref="es:hizkuntzak"  minOccurs="0"/>
+                    <xsd:element ref="es:besteak"  minOccurs="0" maxOccurs="unbounded"/>
                 </xsd:sequence>
                 <xsd:attribute name="nan" type="xsd:string" use="required"/>
             </xsd:restriction>

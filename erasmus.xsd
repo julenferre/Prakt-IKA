@@ -1,43 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
-	xmlns="www.ehu.eus/erasmus"
-	targetNamespace="www.ehu.eus/erasmus"
-	elementFormDefault="qualified">
+    xmlns="www.ehu.eus/erasmus"
+    targetNamespace="www.ehu.eus/erasmus"
+    elementFormDefault="qualified">
     
-    <xsd:element name="erasmus" type="erasmusT"/>
     
-    <xsd:complexType name="erasmusT">
-		<xsd:sequence>				
-		    <xsd:element ref="ikaslea" minOccurs="1" maxOccurs="unbounded"/>
-		</xsd:sequence>
-    </xsd:complexType>
     
+    <xsd:element name="erasmus">
+        <xsd:complexType>
+            <xsd:sequence>				
+                <xsd:element ref="ikaslea" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute name="herrialdea" type="xsd:string" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
     <xsd:element name="ikaslea" type="ikasleaT" />
-    
     <xsd:complexType name="ikasleaT">
         <xsd:sequence>
-            <xsd:element name="izena" type="xsd:string"/>
-            <xsd:element name="abizenak" type="xsd:string"/>
-            <xsd:element name="jaioteguna" type="xsd:date"/>
-            <xsd:element name="helbidea" type="helbideaT" block="#all"/>
-            <xsd:element name="eposta" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xsd:element name="telefonoa" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xsd:element name="notak" type="notakT"/>
-            <xsd:element name="praktikak" type="praktikakT" minOccurs="0"/>
-            <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="0"/>
-            <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="izena" />
+            <xsd:element ref="abizenak" />
+            <xsd:element ref="jaioteguna" />
+            <xsd:element ref="helbidea" />
+            <xsd:element ref="eposta"  minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="telefonoa"  minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="notak" />
+            <xsd:element ref="praktikak"  minOccurs="0" />
+            <xsd:element ref="hizkuntzak"  minOccurs="0"/>
+            <xsd:element ref="besteak"  minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
         <xsd:attribute name="nan" type="xsd:string" use="required"/>
+        <xsd:attribute name="kodea" type="xsd:ID" use="required"/>
     </xsd:complexType>
+    
+    <xsd:element name="izena" type="xsd:string"/>
+    <xsd:element name="besteak" type="xsd:string" nillable="true"/>
+    <xsd:element name="abizenak" type="xsd:string"/>
+    <xsd:element name="jaioteguna" type="xsd:date"/>
+    <xsd:element name="helbidea" type="helbideaT" block="#all"/>
+    <xsd:element name="eposta" type="xsd:string" />
+    <xsd:element name="telefonoa" type="xsd:string" />
+    <xsd:element name="notak" type="notakT"/>
+    <xsd:element name="praktikak" type="praktikakT" nillable="true" />
+    <xsd:element name="hizkuntzak" type="hizkuntzakT" nillable="true"/>
     
     <xsd:complexType name="helbideaT">
         <xsd:sequence>
             <xsd:element name="kalea" type="xsd:string"/>
             <xsd:element name="portala" type="xsd:string"/>
-            <xsd:element name="pisua" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="atea" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="besteak" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="pisua" type="xsd:string" minOccurs="0" nillable="true"/>
+            <xsd:element name="atea" type="xsd:string" minOccurs="0" nillable="true"/>
+            <xsd:element name="besteak" type="xsd:string" minOccurs="0" nillable="true"/>
             <xsd:element name="hiria" type="xsd:string"/>
             <xsd:element name="probintzia" type="xsd:string"/>
         </xsd:sequence>

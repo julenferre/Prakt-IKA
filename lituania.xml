@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
+<erasmus
+    xmlns="www.ehu.eus/erasmus"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.ehu.eus/erasmus lituania.xsd">
+    <lituaniaIkaslea nan="12345678D">
+        <izena>Vladislav</izena>
+        <abizenak>Kalashnikov Agirregomezkorta</abizenak>
+        <jaioteguna>1994-06-14</jaioteguna>
+        <helbidea>
+            <kalea>c/Urri Gorria</kalea>
+            <portala>1</portala>
+            <hiria>Tallin</hiria>
+            <probintzia>Tallin</probintzia>
+        </helbidea>
+        <eposta>letoniasucks@gmail.com</eposta>
+        <telefonoa>9741657423524</telefonoa>
+        <notak>
+            <nota irakasgaia="IKA">10</nota>
+            <nota irakasgaia="SGI">5</nota>
+        </notak>
+        
+        <hizkuntzak>
+            <hizkuntza izena="ingelesa">B2</hizkuntza>
+            <hizkuntza izena="errusiera">B2</hizkuntza>
+        </hizkuntzak>
+        <praktikak>
+            <praktika>
+                <enpresa>Gulag</enpresa>
+                <postua>Harrotza</postua>
+                <hasieraData>1994-06-14</hasieraData>
+                <bukaeraData>1994-07-14</bukaeraData>
+            </praktika>
+        </praktikak>
+        
+    </lituaniaIkaslea>
+    
+</erasmus>
