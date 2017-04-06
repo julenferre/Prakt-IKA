@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
+<!--
+        - Gida baimena
+        - Jatorrizko unibertsitatea
+    --> 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
     xmlns="www.ehu.eus/erasmus"
     targetNamespace="www.ehu.eus/erasmus"
@@ -7,10 +11,7 @@
     
     <xsd:include schemaLocation="erasmus.xsd"/>
     
-    <!--
-        - Gida baimena
-        - Jatorrizko unibertsitatea
-    --> 
+    <xsd:element name="estoniaIkaslea" type="estoniaT" substitutionGroup="ikaslea" />
     
     <xsd:complexType name="estoniaT">
         <xsd:complexContent>
@@ -24,17 +25,11 @@
     </xsd:complexType>
     
     <xsd:complexType name="gidaBaimenaT">
-        <xsd:sequence>
-            <xsd:element name="gidaBaimena" maxOccurs="unbounded">
-                <xsd:complexType>
-                    <xsd:simpleContent>            
-                        <xsd:extension base="xsd:string">
-                            <xsd:attribute name="ibilgailua" type="xsd:string"/>
-                        </xsd:extension>            
-                    </xsd:simpleContent>
-                </xsd:complexType>
-            </xsd:element>
-        </xsd:sequence>  
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="ibilgailua" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     
 </xsd:schema>

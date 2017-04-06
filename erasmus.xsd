@@ -5,16 +5,15 @@
 	targetNamespace="www.ehu.eus/erasmus"
 	elementFormDefault="qualified">
     
+    <xsd:element name="erasmus" type="erasmusT"/>
     
+    <xsd:complexType name="erasmusT">
+		<xsd:sequence>				
+		    <xsd:element ref="ikaslea" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+    </xsd:complexType>
     
-    <xsd:element name="erasmus">
-        <xsd:complexType>
-			<xsd:sequence>				
-			    <xsd:element name="ikaslea" type="ikasleaT" minOccurs="1" maxOccurs="unbounded"/>
-			</xsd:sequence>
-            <xsd:attribute name="herrialdea" type="xsd:string" use="required"/>
-		</xsd:complexType>
-    </xsd:element>
+    <xsd:element name="ikaslea" type="ikasleaT" />
     
     <xsd:complexType name="ikasleaT">
         <xsd:sequence>

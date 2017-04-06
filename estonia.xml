@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
-<erasmus herrialdea="estonia"
+<erasmus
     xmlns="www.ehu.eus/erasmus"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="www.ehu.eus/erasmus estonia.xsd">
-    <ikaslea nan="12345644D">
+    <estoniaIkaslea nan="12345678D">
         <izena>Vladislav</izena>
         <abizenak>Kalashnikov Agirregomezkorta</abizenak>
         <jaioteguna>1994-06-14</jaioteguna>
@@ -31,9 +31,9 @@
             <hizkuntza izena="ingelesa">B2</hizkuntza>
             <hizkuntza izena="errusiera">B2</hizkuntza>
         </hizkuntzak>
-        <gidaBaimena>
-            
-        </gidaBaimena>
-    </ikaslea>
+        <gidaBaimena ibilgailua="autoa">B</gidaBaimena>
+        <jatorrizkoUni></jatorrizkoUni>
+        
+    </estoniaIkaslea>
     
 </erasmus>
