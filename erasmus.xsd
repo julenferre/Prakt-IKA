@@ -93,7 +93,7 @@
         <xsd:sequence>
             <xsd:element ref="enpresa" />
             <xsd:element ref="postua" />
-            <xsd:element ref="iraupena" />
+            <xsd:element ref="iraupena" minOccurs="0"/>
         </xsd:sequence>
     </xsd:complexType>
     
