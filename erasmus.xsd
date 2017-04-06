@@ -20,7 +20,7 @@
             <xsd:element name="izena" type="xsd:string"/>
             <xsd:element name="abizenak" type="xsd:string"/>
             <xsd:element name="jaioteguna" type="xsd:date"/>
-            <xsd:element name="helbidea" type="helbideaT"/>
+            <xsd:element name="helbidea" type="helbideaT" block="#all"/>
             <xsd:element name="eposta" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="telefonoa" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="notak" type="notakT"/>
