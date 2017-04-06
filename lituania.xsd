@@ -8,6 +8,7 @@
     
     <xsd:import namespace="www.ehu.eus/erasmus" schemaLocation="erasmus.xsd"/>
     <xsd:element name="lituaniaIkaslea" type="lituaniaT" substitutionGroup="es:ikaslea" />
+    
     <xsd:complexType name="PraktikaQ">
         <xsd:complexContent>
             <xsd:restriction base="es:PraktikaT">
@@ -41,9 +42,9 @@
                     <xsd:element ref="es:eposta" minOccurs="0" maxOccurs="unbounded"/>
                     <xsd:element ref="es:telefonoa"  minOccurs="0" maxOccurs="unbounded"/>
                     <xsd:element ref="es:notak" />
-                    <xsd:element ref="es:praktikak"  minOccurs="0"/>
-                    <xsd:element ref="es:hizkuntzak"  minOccurs="0"/>
-                    <xsd:element ref="es:besteak"  minOccurs="0" maxOccurs="unbounded"/>
+
+                    <xsd:element ref="es:hizkuntzak" minOccurs="0"/>
+                    <xsd:element ref="es:besteak" minOccurs="0" maxOccurs="unbounded"/>
                 </xsd:sequence>
                 <xsd:attribute name="nan" type="xsd:string" use="required"/>
             </xsd:restriction>

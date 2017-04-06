@@ -21,19 +21,18 @@
             <es:nota irakasgaia="IKA">10</es:nota>
             <es:nota irakasgaia="SGI">5</es:nota>
         </es:notak>
-        
+        <es:praktikak>
+            <praktika>
+                <es:enpresa>Gulag</es:enpresa>
+                <es:postua>Harrotza</es:postua>
+                <hasieraData>1994-06-14</hasieraData>
+                <bukaeraData>1994-07-14</bukaeraData>
+            </praktika>
+        </es:praktikak>
         <es:hizkuntzak>
             <es:hizkuntza izena="ingelesa">B2</es:hizkuntza>
             <es:hizkuntza izena="errusiera">B2</es:hizkuntza>
         </es:hizkuntzak>
-        <praktikak>
-            <praktika>
-                <enpresa>Gulag</enpresa>
-                <postua>Harrotza</postua>
-                <hasieraData>1994-06-14</hasieraData>
-                <bukaeraData>1994-07-14</bukaeraData>
-            </praktika>
-        </praktikak>
         
     </lituaniaIkaslea>
     
