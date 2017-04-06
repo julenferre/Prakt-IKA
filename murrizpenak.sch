@@ -41,11 +41,11 @@
         </rule>        
     </pattern>
     <pattern>        
-        <rule id ="gaindituak" context="//era:notak">
-            <assert id="gaindituakA" test="era:nota&gt;=5">
+        <rule id ="gaindituak" context="//era:notak/era:nota">
+            <assert id="gaindituakA" test=".&gt;=5">
                 Irakasgai guztiak gaindituak egon beharko lirateke.
             </assert>
-            <assert id="notakA" test="era:nota&lt;=10 and era:nota&gt;=0">
+            <assert id="notakA" test=".&lt;=10 and .&gt;=0">
                 Notak 10-en gainean puntuatzen dira; balioa 0 eta 10-en artean egon beharko lirateke
             </assert>
         </rule>        
