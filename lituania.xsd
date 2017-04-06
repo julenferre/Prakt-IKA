@@ -12,8 +12,8 @@
         <xsd:complexContent>
             <xsd:restriction base="es:PraktikaT">
                 <xsd:sequence>
-                    <xsd:element name="enpresa" type="xsd:string"/>
-                    <xsd:element name="postua" type="xsd:string"/>
+                    <xsd:element ref="es:enpresa" />
+                    <xsd:element ref="es:postua" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

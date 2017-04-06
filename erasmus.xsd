@@ -4,15 +4,12 @@
     xmlns="www.ehu.eus/erasmus"
     targetNamespace="www.ehu.eus/erasmus"
     elementFormDefault="qualified">
-    
-    
-    
+
     <xsd:element name="erasmus">
         <xsd:complexType>
             <xsd:sequence>				
                 <xsd:element ref="ikaslea" minOccurs="1" maxOccurs="unbounded"/>
             </xsd:sequence>
-            <xsd:attribute name="herrialdea" type="xsd:string" use="required"/>
         </xsd:complexType>
     </xsd:element>
     <xsd:element name="ikaslea" type="ikasleaT" />
@@ -92,10 +89,12 @@
     
     <xsd:complexType name="PraktikaT">
         <xsd:sequence>
-            <xsd:element name="enpresa" type="xsd:string"/>
-            <xsd:element name="postua" type="xsd:string"/>
-            <xsd:element name="iraupena" type="xsd:string" minOccurs="0"/>
+            <xsd:element ref="enpresa" />
+            <xsd:element ref="postua" />
+            <xsd:element ref="iraupena" minOccurs="0"/>
         </xsd:sequence>
     </xsd:complexType>
-    
+    <xsd:element name="enpresa" type="xsd:string"/>
+    <xsd:element name="postua" type="xsd:string"/>
+    <xsd:element name="iraupena" type="xsd:string"/>
 </xsd:schema>
