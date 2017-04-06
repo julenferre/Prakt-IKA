@@ -7,7 +7,7 @@
     elementFormDefault="qualified">
     
     <xsd:import namespace="www.ehu.eus/erasmus" schemaLocation="erasmus.xsd"/>
-    <xsd:element name="lituaniaIkaslea" type="lituaniaT" substitutionGroup="es:ikaslea" />
+    <xsd:element name="lituaniaIkaslea" type="LituaniaW" substitutionGroup="es:ikaslea" />
     
     <xsd:complexType name="PraktikaQ">
         <xsd:complexContent>
@@ -31,6 +31,16 @@
         </xsd:complexContent>
     </xsd:complexType>
     
+    <xsd:complexType name="lituaniaPraktikakT">
+        <xsd:complexContent>
+            <xsd:restriction base="es:praktikakT">
+                <xsd:sequence>
+                    <xsd:element ref="es:praktika" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
     <xsd:complexType name="lituaniaT">
         <xsd:complexContent>
             <xsd:restriction base="es:ikasleaT">
@@ -42,7 +52,6 @@
                     <xsd:element ref="es:eposta" minOccurs="0" maxOccurs="unbounded"/>
                     <xsd:element ref="es:telefonoa"  minOccurs="0" maxOccurs="unbounded"/>
                     <xsd:element ref="es:notak" />
-
                     <xsd:element ref="es:hizkuntzak" minOccurs="0"/>
                     <xsd:element ref="es:besteak" minOccurs="0" maxOccurs="unbounded"/>
                 </xsd:sequence>
@@ -55,9 +64,12 @@
         <xsd:complexContent>
             <xsd:extension base="lituaniaT">
                 <xsd:sequence>
-                    <xsd:element name="praktikak" type="PraktikaW" minOccurs="1"/>
+                    <xsd:element ref="praktikak" minOccurs="1"/>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
+    
+    <xsd:element name="praktika" type="PraktikaW" substitutionGroup="es:praktika"/> 
+    <xsd:element name="praktikak" type="lituaniaPraktikakT" substitutionGroup="es:praktikak"/>
 </xsd:schema>
