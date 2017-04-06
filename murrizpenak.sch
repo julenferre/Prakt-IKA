@@ -67,8 +67,29 @@
         </rule>
     </pattern>
     <pattern>
-        <rule id="plazaKop" context="era:erasmus">
-            <assert id="plazaKopA" test="count(est:estoniaIkaslea)&lt;=@plazaKop">
+        <rule id="plazaKopEstonia" context="era:erasmus">
+            <assert id="plazaKopEstoniaA" test="count(est:estoniaIkaslea)&lt;=@plazaKop">
+                Ikasle gehiegi daude (ikusi plaza kopurua)
+            </assert>
+        </rule>
+    </pattern>
+    <pattern>
+        <rule id="plazaKopLetonia" context="era:erasmus">
+            <assert id="plazaKopLetoniaA" test="count(let:letoniaIkaslea)&lt;=@plazaKop">
+                Ikasle gehiegi daude (ikusi plaza kopurua)
+            </assert>
+        </rule>
+    </pattern>
+    <pattern>
+        <rule id="plazaKopLituania" context="era:erasmus">
+            <assert id="plazaKopLituaniaA" test="count(lit:lituaniaIkaslea)&lt;=@plazaKop">
+                Ikasle gehiegi daude (ikusi plaza kopurua)
+            </assert>
+        </rule>
+    </pattern>
+    <pattern>
+        <rule id="solairuAtea" context="era:helbidea[era:solairua]">
+            <assert id="solairuAteaA" test="era:atea">
                 Ikasle gehiegi daude (ikusi plaza kopurua)
             </assert>
         </rule>
