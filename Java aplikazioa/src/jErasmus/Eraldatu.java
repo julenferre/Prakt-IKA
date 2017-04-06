@@ -13,9 +13,9 @@ public class Eraldatu {
 
 	public static void main(String[] args) throws XQException
 	{
-		String a_doc = "input/biblio.xml";
+		String a_doc = "input/estonia.xml";
 
-		String fileName = "output/listofbooks.html";
+		String fileName = "output/estonia2letonia.xml";
 
 		if (args.length == 1) {
 			a_doc = args[0];
@@ -34,19 +34,32 @@ public class Eraldatu {
 
 		xqe.bindString(new QName("adoc"), a_doc, null);
 
-		fileName = "output/listofbooks-"+a_doc.replace(".", "-").replace("/", "-")+".html";
-
-
 		String xqueryString = 
 				"declare variable $adoc external;\n"+
-				"let $books := doc($adoc)//book\n"+    		
+				"let $ikasleak := doc($adoc)//estoniaIkaslea\n"+    		
 				"\n"+
-				"return <html><h1>List of Books from {$adoc}</h1>\n"+
-				"	<ul>\n"+
-				"		{for $b in $books\n"+
-				"			return <li>{$b/title/text()}</li>} "+
-				"	</ul>\n"+
-				"</html>\n";
+				"return " + 
+				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
+				"    xmlns:era='www.ehu.eus/erasmus'"+
+				"    xmlns='www.ehu.eus/estonia'"+
+				"    xsi:schemaLocation='www.ehu.eus/erasmus estonia.xsd'>"+
+				"    "+
+				"    {for $i in doc($adoc)//estoniaIkaslea\n"+
+				"		return "+
+				"    <letoniaIkaslea kodea='{$i/@kodea}' nan='{$i/@nan}'> "+
+				"        {$i/era:izena}"+
+				"        {$i/era:abizenak}"+
+				"        {$i/era:jaioteguna}"+
+				"        {$i/era:helbidea}"+
+				"        {$i/era:eposta}"+
+				"        {$i/era:telefonoa}"+
+				"        {$i/era:notak}"+
+				"        {$i/era:praktikak}"+
+				"        {$i/era:hizkuntzak}"+
+				"    </letoniaIkaslea>"+
+				"}"+
+				"</era:erasmus>"+
+				"";
 
 		// print the result of the query
 		try {
