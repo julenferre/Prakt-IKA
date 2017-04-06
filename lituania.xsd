@@ -6,7 +6,7 @@
     elementFormDefault="qualified">
     
     <xsd:include schemaLocation="erasmus.xsd"/>
-        
+    <xsd:element name="lituaniaIkaslea" type="lituaniaT" substitutionGroup="ikaslea" />
     <xsd:complexType name="PraktikaQ">
             <xsd:complexContent>
                 <xsd:restriction base="PraktikaT">
@@ -29,5 +29,32 @@
         </xsd:complexContent>
     </xsd:complexType>
    
+    <xsd:complexType name="lituaniaT">
+        <xsd:complexContent>
+            <xsd:restriction base="ikasleaT">
+                <xsd:sequence>
+                    <xsd:element name="izena" type="xsd:string"/>
+                    <xsd:element name="abizenak" type="xsd:string"/>
+                    <xsd:element name="jaioteguna" type="xsd:date"/>
+                    <xsd:element name="helbidea" type="helbideaT"/>
+                    <xsd:element name="eposta" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+                    <xsd:element name="telefonoa" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+                    <xsd:element name="notak" type="notakT"/>
+                    <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="1"/>
+                    <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                <xsd:attribute name="nan" type="xsd:string" use="required"/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
     
+    <xsd:complexType name="LituaniaW">
+        <xsd:complexContent>
+            <xsd:extension base="lituaniaT">
+                <xsd:sequence>
+                    <xsd:element name="praktikak" type="PraktikaW" minOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
 </xsd:schema>
