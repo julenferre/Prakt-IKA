@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
-<erasmus
-    xmlns="www.ehu.eus/erasmus"
+<!--<?oxygen SCHSchema="murrizpenak.sch" type="xml"?>-->
+<es:erasmus
+    xmlns="www.ehu.eus/lituania"
+    xmlns:es="www.ehu.eus/erasmus"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="www.ehu.eus/erasmus lituania.xsd">
-    <lituaniaIkaslea nan="12345678D">
-        <izena>Vladislav</izena>
-        <abizenak>Kalashnikov Agirregomezkorta</abizenak>
-        <jaioteguna>1994-06-14</jaioteguna>
-        <helbidea>
-            <kalea>c/Urri Gorria</kalea>
-            <portala>1</portala>
-            <hiria>Tallin</hiria>
-            <probintzia>Tallin</probintzia>
-        </helbidea>
-        <eposta>letoniasucks@gmail.com</eposta>
-        <telefonoa>9741657423524</telefonoa>
-        <notak>
-            <nota irakasgaia="IKA">10</nota>
-            <nota irakasgaia="SGI">5</nota>
-        </notak>
+    xsi:schemaLocation="www.ehu.eus/lituania lituania.xsd www.ehu.eus/erasmus erasmus.xsd">
+    <lituaniaIkaslea nan="12345678D" kodea="as">
+        <es:izena>Vladislav</es:izena>
+        <es:abizenak>Kalashnikov Agirregomezkorta</es:abizenak>
+        <es:jaioteguna>1994-06-14</es:jaioteguna>
+        <es:helbidea>
+            <es:kalea>c/Urri Gorria</es:kalea>
+            <es:portala>1</es:portala>
+            <es:hiria>Tallin</es:hiria>
+            <es:probintzia>Tallin</es:probintzia>
+        </es:helbidea>
+        <es:eposta>letoniasucks@gmail.com</es:eposta>
+        <es:telefonoa>9741657423524</es:telefonoa>
+        <es:notak>
+            <es:nota irakasgaia="IKA">10</es:nota>
+            <es:nota irakasgaia="SGI">5</es:nota>
+        </es:notak>
         
-        <hizkuntzak>
-            <hizkuntza izena="ingelesa">B2</hizkuntza>
-            <hizkuntza izena="errusiera">B2</hizkuntza>
-        </hizkuntzak>
+        <es:hizkuntzak>
+            <es:hizkuntza izena="ingelesa">B2</es:hizkuntza>
+            <es:hizkuntza izena="errusiera">B2</es:hizkuntza>
+        </es:hizkuntzak>
         <praktikak>
             <praktika>
                 <enpresa>Gulag</enpresa>
@@ -36,4 +37,4 @@
         
     </lituaniaIkaslea>
     
-</erasmus>
+</es:erasmus>
