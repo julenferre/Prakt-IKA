@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
 	xmlns="www.ehu.eus/erasmus"
 	targetNamespace="www.ehu.eus/erasmus"
 	elementFormDefault="qualified">
+    
+    
     
     <xsd:element name="erasmus">
         <xsd:complexType>
@@ -47,7 +50,7 @@
                 <xsd:complexType>
                     <xsd:simpleContent>            
                         <xsd:extension base="xsd:double">
-                            <xsd:attribute name="irakasgaia" type="xsd:string"/>
+                            <xsd:attribute name="irakasgaia" type="xsd:string" use="required"/>
                         </xsd:extension>            
                     </xsd:simpleContent>
                 </xsd:complexType>

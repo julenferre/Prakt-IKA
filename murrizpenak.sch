@@ -34,4 +34,21 @@
             </sch:assert>
         </sch:rule>        
     </sch:pattern>
+    <sch:pattern>        
+        <sch:rule id ="ingelesa" context="era:ikaslea/hizkuntzak">            
+            <sch:assert id="ingelesaA" test="era:hizkuntza/text()='^(([I|i]ng(e)?lesa)|([E|e]nglish))$'">
+                Hizkuntzen artean ingelesa egon beharko lirateke
+            </sch:assert>
+        </sch:rule>        
+    </sch:pattern>
+    <sch:pattern>        
+        <sch:rule id ="gaindituak" context="era:ikaslea/notak">            
+            <sch:assert id="gaindituakA" test="era:nota&gt;=5">
+                Irakasgai guztiak gaindituak egon beharko lirateke.
+            </sch:assert>
+            <sch:assert id="notakA" test="era:nota&lt;=10 and era:nota&gt;=0">
+                Notak 10-en gainean puntuatzen dira; balioa 0 eta 10-en artean egon beharko lirateke
+            </sch:assert>
+        </sch:rule>        
+    </sch:pattern>
 </sch:schema>
