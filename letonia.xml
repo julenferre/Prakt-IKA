@@ -2,8 +2,7 @@
 <?oxygen  SCHSchema="murrizpenak.sch" type="xml"?>
 <erasmus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="www.ehu.eus/erasmus"
-    xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd"
-    herrialdea="Russia">
+    xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd">
     
     <letoniaIkaslea nan="12345678P">
         <izena>Nikolai</izena>

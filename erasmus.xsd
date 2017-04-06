@@ -41,6 +41,8 @@
     <xsd:element name="praktikak" type="praktikakT" nillable="true" />
     <xsd:element name="hizkuntzak" type="hizkuntzakT" nillable="true"/>
     
+    <xsd:element name="praktika" type="PraktikaT" />
+    
     <xsd:complexType name="helbideaT">
         <xsd:sequence>
             <xsd:element name="kalea" type="xsd:string"/>
@@ -69,7 +71,7 @@
     
     <xsd:complexType name="praktikakT">
         <xsd:sequence>
-            <xsd:element name="praktika" type="PraktikaT" maxOccurs="unbounded" />         
+            <xsd:element ref="praktika" minOccurs="0" maxOccurs="unbounded" />         
         </xsd:sequence>
     </xsd:complexType>
     
@@ -91,9 +93,10 @@
         <xsd:sequence>
             <xsd:element ref="enpresa" />
             <xsd:element ref="postua" />
-            <xsd:element ref="iraupena" minOccurs="0"/>
+            <xsd:element ref="iraupena" />
         </xsd:sequence>
     </xsd:complexType>
+    
     <xsd:element name="enpresa" type="xsd:string"/>
     <xsd:element name="postua" type="xsd:string"/>
     <xsd:element name="iraupena" type="xsd:string"/>
