@@ -17,7 +17,6 @@ eposta && telefono beharrekoak
             <xsd:sequence>				
                 <xsd:element name="ikaslea" type="letoniaT" minOccurs="1" maxOccurs="unbounded"/>
             </xsd:sequence>
-            <xsd:attribute name="herrialdea" type="xsd:string" use="required"/>
         </xsd:complexType>
     </xsd:element>
     
@@ -33,7 +32,7 @@ eposta && telefono beharrekoak
                     <xsd:element name="telefonoa" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
                     <xsd:element name="notak" type="notakT"/>
                     <xsd:element name="praktikak" type="letoniaPraktikakT" minOccurs="1"/>
-                    <xsd:element name="hizkuntzak" type="hizkuntzakT" minOccurs="0"/>
+                    <xsd:element name="hizkuntzak" type="hizkuntzakT" />
                     <xsd:element name="besteak" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
                 </xsd:sequence>
                 <xsd:attribute name="nan" type="xsd:string" use="required"/>
