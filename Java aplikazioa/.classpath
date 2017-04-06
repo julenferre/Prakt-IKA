@@ -2,5 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9he.jar"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9-test.jar"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9-xqj.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

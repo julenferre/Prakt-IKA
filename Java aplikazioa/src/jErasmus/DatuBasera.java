@@ -9,7 +9,7 @@ import javax.xml.namespace.QName;
 
 import com.saxonica.xqj.*;
 
-public class Eraldatu {
+public class DatuBasera {
 
 	public static void main(String[] args) throws XQException
 	{
