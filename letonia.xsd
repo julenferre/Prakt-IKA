@@ -2,7 +2,7 @@
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
 <!--
 praktika >= 1
-eposta && telefono beharrekoak
+eposta && telefono beharrezkoak
 -->
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
@@ -11,14 +11,6 @@ eposta && telefono beharrekoak
     elementFormDefault="qualified">
     
     <xsd:include schemaLocation="erasmus.xsd"/>
-    
-    <xsd:element name="letoniaErasmus">
-        <xsd:complexType>
-            <xsd:sequence>				
-                <xsd:element name="ikaslea" type="letoniaT" minOccurs="1" maxOccurs="unbounded"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
     
     <xsd:complexType name="letoniaT">
         <xsd:complexContent>

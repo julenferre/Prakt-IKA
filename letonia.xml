@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen  SCHSchema="murrizpenak.sch" type="xml"?>
+<erasmus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="www.ehu.eus/erasmus"
+    xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd"
+    herrialdea="Russia">
+    
+    <ikaslea nan="12345678P">
+        <izena>Nikolai</izena>
+        <abizenak>Putin Cyka</abizenak>
+        <jaioteguna>1998-02-23</jaioteguna>
+        <helbidea>
+            <kalea>kalea</kalea>
+            <portala>2</portala>
+            <pisua>3</pisua>
+            <atea>izq.</atea>
+            <hiria>Riga</hiria>
+            <probintzia>Riga</probintzia>
+        </helbidea>
+        <eposta>cykablyat@gmail.com</eposta>
+        <eposta>nikolaicb01@gmail.com</eposta>
+        <notak>
+            <nota irakasgaia="SGI">10.0</nota>
+            <nota irakasgaia="IKA">8.7</nota>
+        </notak>
+        <praktikak>
+            <praktika>
+                <enpresa>newRed</enpresa>
+                <postua>sare sozialen zuzendaria</postua>
+                <iraupena>6 hilabete</iraupena>
+            </praktika>
+        </praktikak>
+        <hizkuntzak>
+            <hizkuntza izena="letoniera">C2</hizkuntza>
+            <hizkuntza izena="english">C1</hizkuntza>
+        </hizkuntzak>
+    </ikaslea>
+</erasmus>
