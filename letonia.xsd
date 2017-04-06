@@ -2,7 +2,7 @@
 <?oxygen SCHSchema="murrizpenak.sch" type="xml"?>
 <!--
 praktika >= 1
-eposta && telefono beharrezkoak
+eposta && telefono beharrekoak
 -->
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"	
@@ -12,7 +12,9 @@ eposta && telefono beharrezkoak
     
     <xsd:include schemaLocation="erasmus.xsd"/>
     
-    <xsd:complexType name="letoniaT">
+    <xsd:element name="letoniaIkaslea" type="letoniaT" substitutionGroup="ikaslea"/>
+    
+    <xsd:complexType name="letoniaT" >
         <xsd:complexContent>
             <xsd:restriction base="ikasleaT">
                 <xsd:sequence>
@@ -36,7 +38,19 @@ eposta && telefono beharrezkoak
         <xsd:complexContent>
             <xsd:restriction base="praktikakT">
                 <xsd:sequence>
-                    <xsd:element name="praktika" type="PraktikaT" minOccurs="1" maxOccurs="unbounded" />        
+                    <xsd:element name="praktika" type="letoniaPraktikaT" minOccurs="1" maxOccurs="unbounded" />        
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="letoniaPraktikaT">
+        <xsd:complexContent>
+            <xsd:restriction base="PraktikaT">
+                <xsd:sequence>
+                    <xsd:element name="enpresa" type="xsd:string"/>
+                    <xsd:element name="postua" type="xsd:string"/>
+                    <xsd:element name="iraupena" type="xsd:string" minOccurs="1"/>    
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

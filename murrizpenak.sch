@@ -9,6 +9,14 @@
             </assert>
         </rule>
     </pattern>
+    <pattern>
+        <rule id="eposta" context="//era:eposta">
+            <assert id="epostaA" test="matches(text(),'^([A-Za-z0-9_\-])+(@)([a-z])+\.([a-z])+$')">
+                Formatua: erabiltzailea@zerbitzaria.domeinua
+                Eposta adibideak: adibidea@pipopipo.eus, info@ehu.eus
+            </assert>
+        </rule>
+    </pattern>
     <pattern>        
         <rule id ="ikaslea" context="era:erasmus">            
             <assert id="izenaA" test="matches(//era:izena,'^([A-Z][a-z]+)(\s([A-Z])([a-z]+)?)?$')">
@@ -18,10 +26,6 @@
             <assert id="abizenakA" test="matches(//era:abizenak,'^([A-Z][a-z]+)(\s([A-Z])([a-z]+))*$')">
                 Abizenak soilik hizkiz osatuta egon behar d(ir)a. Abizena(k) letra larriz hasi.
                 Tilde gabe. Abizenen adibideak: García, Mendilibar, De Cervantes 
-            </assert>
-            <assert id="epostaA" test="matches(//era:eposta,'^([A-Za-z0-9_\-])+(@)([a-z])+\.([a-z])+$')">
-                Formatua: erabiltzailea@zerbitzaria.domeinua
-                Eposta adibideak: adibidea@pipopipo.eus, info@ehu.eus
             </assert>
             <assert id="jaiotegunaA" test="matches(//era:jaioteguna,'^((19|20)[0-9][0-9])\-((0[1-9])|1[0-2])\-([0-2][0-9]|3[0-1])$')">
                 Formatua: UUUU-HH-EE
