@@ -37,7 +37,7 @@
         </rule>        
     </pattern>
     <pattern>        
-        <rule id ="gaindituak" context="//era:notak">            
+        <rule id ="gaindituak" context="//era:notak">
             <assert id="gaindituakA" test="era:nota&gt;=5">
                 Irakasgai guztiak gaindituak egon beharko lirateke.
             </assert>
