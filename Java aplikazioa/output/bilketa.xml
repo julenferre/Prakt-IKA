@@ -1,0 +1,121 @@
+<era:erasmus xmlns="www.ehu.eus/erasmus"
+             xmlns:era="www.ehu.eus/erasmus"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ikaslea kodea="" nan="" herrialdea="lituania"/>
+   <ikaslea kodea="as" nan="12345678D" herrialdea="lituania">
+      <es:izena xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">Vladislav</es:izena>
+      <es:abizenak xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">Kalashnikov Agirregomezkorta</es:abizenak>
+      <es:jaioteguna xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">1994-06-14</es:jaioteguna>
+      <es:helbidea xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">
+            <es:kalea>c/Urri Gorria</es:kalea>
+            <es:portala>1</es:portala>
+            <es:hiria>Tallin</es:hiria>
+            <es:probintzia>Tallin</es:probintzia>
+        </es:helbidea>
+      <es:eposta xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">letoniasucks@gmail.com</es:eposta>
+      <es:telefonoa xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">9741657423524</es:telefonoa>
+      <es:notak xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">
+            <es:nota irakasgaia="IKA">10</es:nota>
+            <es:nota irakasgaia="SGI">5</es:nota>
+        </es:notak>
+      <es:hizkuntzak xmlns="www.ehu.eus/lituania" xmlns:es="www.ehu.eus/erasmus">
+            <es:hizkuntza izena="ingelesa">B2</es:hizkuntza>
+            <es:hizkuntza izena="errusiera">B2</es:hizkuntza>
+        </es:hizkuntzak>
+   </ikaslea>
+   <ikaslea kodea="" nan="" herrialdea="lituania"/>
+   <ikaslea kodea="" nan="" herrialdea="estonia"/>
+   <ikaslea kodea="aa" nan="12345678F" herrialdea="estonia">
+      <izena xmlns:est="www.ehu.eus/estonia">Vladislav</izena>
+      <abizenak xmlns:est="www.ehu.eus/estonia">Kalashnikov Agirregomezkorta</abizenak>
+      <jaioteguna xmlns:est="www.ehu.eus/estonia">1994-06-14</jaioteguna>
+      <helbidea xmlns:est="www.ehu.eus/estonia">
+            <kalea>c/Urri Gorria</kalea>
+            <portala>1</portala>
+            <solairua>3</solairua>
+            <atea>Eskuma</atea>
+            <hiria>Tallin</hiria>
+            <probintzia>Tallin</probintzia>
+        </helbidea>
+      <eposta xmlns:est="www.ehu.eus/estonia">letoniasucks@gmail.com</eposta>
+      <telefonoa xmlns:est="www.ehu.eus/estonia">9741657423524</telefonoa>
+      <notak xmlns:est="www.ehu.eus/estonia">
+            <nota irakasgaia="IKA">7</nota>
+            <nota irakasgaia="SGI">5</nota>
+        </notak>
+      <praktikak xmlns:est="www.ehu.eus/estonia">
+            <praktika>
+                <enpresa>Gulag</enpresa>
+                <postua>Harrotza</postua>
+                <iraupena>36 urte</iraupena>
+            </praktika>
+        </praktikak>
+      <hizkuntzak xmlns:est="www.ehu.eus/estonia">
+            <hizkuntza izena="ingelesa">B2</hizkuntza>
+            <hizkuntza izena="errusiera">B2</hizkuntza>
+        </hizkuntzak>
+   </ikaslea>
+   <ikaslea kodea="" nan="" herrialdea="estonia"/>
+   <ikaslea kodea="aab" nan="12345678D" herrialdea="estonia">
+      <izena xmlns:est="www.ehu.eus/estonia">Mirozlav</izena>
+      <abizenak xmlns:est="www.ehu.eus/estonia">Petrenko Etxeberria</abizenak>
+      <jaioteguna xmlns:est="www.ehu.eus/estonia">2095-02-16</jaioteguna>
+      <helbidea xmlns:est="www.ehu.eus/estonia">
+            <kalea>c/Karl Marx</kalea>
+            <portala>3</portala>
+            <hiria>Tallin</hiria>
+            <probintzia>Tallin</probintzia>
+        </helbidea>
+      <eposta xmlns:est="www.ehu.eus/estonia">lituaniasucks@gmail.com</eposta>
+      <telefonoa xmlns:est="www.ehu.eus/estonia">9426852465</telefonoa>
+      <notak xmlns:est="www.ehu.eus/estonia">
+            <nota irakasgaia="IKA">5</nota>
+            <nota irakasgaia="SGI">10</nota>
+        </notak>
+      <praktikak xmlns:est="www.ehu.eus/estonia">
+            <praktika>
+                <enpresa>Gulag</enpresa>
+                <postua>Harrotza</postua>
+                <iraupena>36 urte</iraupena>
+            </praktika>
+        </praktikak>
+      <hizkuntzak xmlns:est="www.ehu.eus/estonia">
+            <hizkuntza izena="ingelesa">B2</hizkuntza>
+            <hizkuntza izena="errusiera">B2</hizkuntza>
+        </hizkuntzak>
+   </ikaslea>
+   <ikaslea kodea="" nan="" herrialdea="estonia"/>
+   <ikaslea kodea="" nan="" herrialdea="letonia"/>
+   <ikaslea kodea="A1" nan="12345678P" herrialdea="letonia">
+      <era:izena xmlns="www.ehu.eus/letonia">Nikolai</era:izena>
+      <era:abizenak xmlns="www.ehu.eus/letonia">Putin Cyka</era:abizenak>
+      <era:jaioteguna xmlns="www.ehu.eus/letonia">1998-02-23</era:jaioteguna>
+      <era:helbidea xmlns="www.ehu.eus/letonia">
+            <era:kalea>kalea</era:kalea>
+            <era:portala>2</era:portala>
+            <era:solairua>3</era:solairua>
+            <era:atea>izq.</era:atea>
+            <era:hiria>Riga</era:hiria>
+            <era:probintzia>Riga</era:probintzia>
+        </era:helbidea>
+      <era:eposta xmlns="www.ehu.eus/letonia">cykablyat@gmail.com</era:eposta>
+      <era:eposta xmlns="www.ehu.eus/letonia">nikolaicb01@gmail.com</era:eposta>
+      <era:telefonoa xmlns="www.ehu.eus/letonia">789456123</era:telefonoa>
+      <era:notak xmlns="www.ehu.eus/letonia">
+            <era:nota irakasgaia="SGI">10.0</era:nota>
+            <era:nota irakasgaia="IKA">8.7</era:nota>
+        </era:notak>
+      <era:praktikak xmlns="www.ehu.eus/letonia">
+            <praktika>
+                <era:enpresa>newRed</era:enpresa>
+                <era:postua>sare sozialen zuzendaria</era:postua>
+                <era:iraupena>6 hilabete</era:iraupena>
+            </praktika>
+        </era:praktikak>
+      <era:hizkuntzak xmlns="www.ehu.eus/letonia">
+            <era:hizkuntza izena="letoniera">C2</era:hizkuntza>
+            <era:hizkuntza izena="english">C1</era:hizkuntza>
+        </era:hizkuntzak>
+   </ikaslea>
+   <ikaslea kodea="" nan="" herrialdea="letonia"/>
+</era:erasmus>

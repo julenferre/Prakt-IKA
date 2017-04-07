@@ -35,8 +35,8 @@ public class Eraldatu {
 		xqe.bindString(new QName("adoc"), a_doc, null);
 
 		String xqueryString = 
-				"declare variable $adoc external;\n"+
-				"let $ikasleak := doc($adoc)//estoniaIkaslea\n"+    		
+				"declare variable $adoc external; \n"+
+				"let $ikasleak := doc($adoc)/*/node() \n"+    		
 				"\n"+
 				"return " + 
 				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
@@ -44,20 +44,20 @@ public class Eraldatu {
 				"    xmlns='www.ehu.eus/estonia'"+
 				"    xsi:schemaLocation='www.ehu.eus/erasmus estonia.xsd'>"+
 				"    "+
-				"    {for $i in doc($adoc)//estoniaIkaslea\n"+
+				"    {for $i in $ikasleak\n"+
 				"		return "+
-				"    <letoniaIkaslea kodea='{$i/@kodea}' nan='{$i/@nan}'> "+
-				"        {$i/era:izena}"+
-				"        {$i/era:abizenak}"+
-				"        {$i/era:jaioteguna}"+
-				"        {$i/era:helbidea}"+
-				"        {$i/era:eposta}"+
-				"        {$i/era:telefonoa}"+
-				"        {$i/era:notak}"+
-				"        {$i/era:praktikak}"+
-				"        {$i/era:hizkuntzak}"+
-				"    </letoniaIkaslea>"+
-				"}"+
+				"    	<letoniaIkaslea kodea='{$i/@kodea}' nan='{$i/@nan}'> "+
+				"       	{$i/era:izena}"+
+				"        	{$i/era:abizenak}"+
+				"        	{$i/era:jaioteguna}"+
+				"        	{$i/era:helbidea}"+
+				"        	{$i/era:eposta}"+
+				"        	{$i/era:telefonoa}"+
+				"        	{$i/era:notak}"+
+				"        	{$i/era:praktikak}"+
+				"        	{$i/era:hizkuntzak}"+
+				"    	</letoniaIkaslea>"+
+				"	}"+
 				"</era:erasmus>"+
 				"";
 

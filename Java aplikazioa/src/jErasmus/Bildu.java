@@ -13,15 +13,27 @@ public class Bildu {
 
 	public static void main(String[] args) throws XQException
 	{
-		String a_doc = "input/biblio.xml";
+		String[] a_doc;
 
-		String fileName = "output/listofbooks.html";
+		String fileName = "output/bilketa.xml";
 
-		if (args.length == 1) {
-			a_doc = args[0];
-		} 
+		if (args.length > 0) {
+			a_doc = new String[args.length];
+			for(int i = 0; i < args.length; i++){
+				a_doc[i] = args[i];
+			}
+		}
+		else {
+			a_doc = new String[3];
+			a_doc[0] = "input/estonia.xml";
+			a_doc[1] = "input/letonia.xml";
+			a_doc[2] = "input/lituania.xml";
+		}
 
-		System.out.println("The input file: "+a_doc);
+		System.out.println("The input files: ");
+		for(int i = 0; i < a_doc.length; i++){
+			System.out.println(i+". file: "+a_doc[i]);
+		}
 		System.out.println("");
 
 		// create the data source and expression to process
@@ -30,24 +42,50 @@ public class Bildu {
 		XQConnection conn = xqs.getConnection();
 		XQExpression xqe = conn.createExpression();
 
-		// Bind variable to expression
+		//XQuery-aren String-a
+		String xqueryString = "";
+		
+		//Aldagaien deklarazioa
+		for(int i = 0; i < a_doc.length; i++){
+			xqe.bindString(new QName("adoc"+i), a_doc[i], null);
+			xqueryString += "declare variable $adoc"+i+" external;\n";
+		}
+		
+		//XQueryko aldagaiei datuen esleipena
+		for(int i = 0; i < a_doc.length; i++){
+			xqueryString += "let $ikasleak"+i+" := doc($adoc"+i+")/*/node()\n";
+		}
+		
+		//return-aren burua
+		xqueryString += 
+				"return " + 
+				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
+				"    xmlns:era='www.ehu.eus/erasmus'"+
+				"    xmlns='www.ehu.eus/erasmus'>";
+		
+		//ikasle bakoitzerako kodea
+		for(int i = 0; i < a_doc.length; i++){
+			xqueryString += "{for $i in $ikasleak"+i+" \n"+
+					"		return <ikaslea kodea='{$i/@kodea}' nan='{$i/@nan}' herrialdea='{substring-before(substring-after($adoc"+i+",'/'),'.')}'>\n"+
+					"        	{$i/era:izena}\n"+
+					"        	{$i/era:abizenak}\n"+
+					"        	{$i/era:jaioteguna}\n"+
+					"        	{$i/era:helbidea}\n"+
+					"        	{$i/era:eposta}\n"+
+					"        	{$i/era:telefonoa}\n"+
+					"        	{$i/era:notak}\n"+
+					"        	{$i/era:praktikak}\n"+
+					"       	{$i/era:hizkuntzak}\n"+
+					"   	 </ikaslea>\n"+
+					"	 }\n";
+		}
+		
+		//returnaren amaiera
+		xqueryString += "</era:erasmus>";
 
-		xqe.bindString(new QName("adoc"), a_doc, null);
-
-		fileName = "output/listofbooks-"+a_doc.replace(".", "-").replace("/", "-")+".html";
-
-
-		String xqueryString = 
-				"declare variable $adoc external;\n"+
-				"let $books := doc($adoc)//book\n"+    		
-				"\n"+
-				"return <html><h1>List of Books from {$adoc}</h1>\n"+
-				"	<ul>\n"+
-				"		{for $b in $books\n"+
-				"			return <li>{$b/title/text()}</li>} "+
-				"	</ul>\n"+
-				"</html>\n";
-
+		// System.out.println(xqueryString);
+		System.out.println("______________________________");
+		
 		// print the result of the query
 		try {
 

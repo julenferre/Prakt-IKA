@@ -2,6 +2,7 @@
              xmlns:era="www.ehu.eus/erasmus"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="www.ehu.eus/erasmus estonia.xsd">
+   <letoniaIkaslea kodea="" nan=""/>
    <letoniaIkaslea kodea="aa" nan="12345678F">
       <izena xmlns="www.ehu.eus/erasmus" xmlns:est="www.ehu.eus/estonia">Vladislav</izena>
       <abizenak xmlns="www.ehu.eus/erasmus" xmlns:est="www.ehu.eus/estonia">Kalashnikov Agirregomezkorta</abizenak>
@@ -32,6 +33,7 @@
             <hizkuntza izena="errusiera">B2</hizkuntza>
         </hizkuntzak>
    </letoniaIkaslea>
+   <letoniaIkaslea kodea="" nan=""/>
    <letoniaIkaslea kodea="aab" nan="12345678D">
       <izena xmlns="www.ehu.eus/erasmus" xmlns:est="www.ehu.eus/estonia">Mirozlav</izena>
       <abizenak xmlns="www.ehu.eus/erasmus" xmlns:est="www.ehu.eus/estonia">Petrenko Etxeberria</abizenak>
@@ -60,4 +62,5 @@
             <hizkuntza izena="errusiera">B2</hizkuntza>
         </hizkuntzak>
    </letoniaIkaslea>
+   <letoniaIkaslea kodea="" nan=""/>
 </era:erasmus>
