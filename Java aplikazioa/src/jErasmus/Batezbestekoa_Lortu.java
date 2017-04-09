@@ -1,9 +1,5 @@
 package jErasmus;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-
 import javax.xml.xquery.*;
 import javax.xml.namespace.QName;
 

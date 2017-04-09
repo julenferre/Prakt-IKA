@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9he.jar"/>
-	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9-test.jar"/>
-	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9-xqj.jar"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/03-Praktikak/Prakt_IKA/Java aplikazioa/saxon9.7/saxon9he.jar"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/03-Praktikak/Prakt_IKA/Java aplikazioa/saxon9.7/saxon9-test.jar"/>
+	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/03-Praktikak/Prakt_IKA/Java aplikazioa/saxon9.7/saxon9-xqj.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
