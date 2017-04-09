@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/oier/Descargas/saxon9.7"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9he.jar"/>
-	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9-test.jar"/>
-	<classpathentry kind="lib" path="E:/EHU/3 maila/2. lauhilabetea/Informazioaren Kudeaketa Aurreratua/02-laborategiak/Lab06_XQuery-Java/SaxonHE9-7-0-2J/saxon9.7/saxon9-xqj.jar"/>
+	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9he.jar"/>
+	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9-test.jar"/>
+	<classpathentry kind="lib" path="/home/oier/Descargas/saxon9.7/saxon9-xqj.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

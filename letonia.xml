@@ -3,7 +3,8 @@
 <era:erasmus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:era="www.ehu.eus/erasmus"
     xmlns="www.ehu.eus/letonia"
-    xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd">
+    xsi:schemaLocation="www.ehu.eus/erasmus letonia.xsd"
+    plazaKop="20">
     
     <letoniaIkaslea kodea="A1" nan="12345678P">
         <era:izena>Nikolai</era:izena>
@@ -33,7 +34,7 @@
         </era:praktikak>
         <era:hizkuntzak>
             <era:hizkuntza izena="letoniera">C2</era:hizkuntza>
-            <era:hizkuntza izena="english">C1</era:hizkuntza>
+            <era:hizkuntza izena="ingelesa">C1</era:hizkuntza>
         </era:hizkuntzak>
     </letoniaIkaslea>
 </era:erasmus>
