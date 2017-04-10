@@ -70,4 +70,37 @@
         
     </est:estoniaIkaslea>
     
+    <est:estoniaIkaslea kodea="aa" nan="12345678F">
+        <izena>Viktor</izena>
+        <abizenak>Reznov Magunagoikoetxea</abizenak>
+        <jaioteguna>1994-06-14</jaioteguna>
+        <helbidea>
+            <kalea>c/Urri Gorria</kalea>
+            <portala>1</portala>
+            <solairua>3</solairua>
+            <atea>Eskuma</atea>
+            <hiria>Kose</hiria>
+            <probintzia>Tallin</probintzia>
+        </helbidea>
+        <eposta>letoniasucks@gmail.com</eposta>
+        <telefonoa>9741657423524</telefonoa>
+        <notak>
+            <nota irakasgaia="IKA">7</nota>
+            <nota irakasgaia="SGI">5</nota>
+        </notak>
+        <praktikak>
+            <praktika>
+                <enpresa>Gulag</enpresa>
+                <postua>Hargina</postua>
+                <iraupena>36 urte</iraupena>
+            </praktika>
+        </praktikak>
+        <hizkuntzak>
+            <hizkuntza izena="ingelesa">B2</hizkuntza>
+            <hizkuntza izena="errusiera">B2</hizkuntza>
+        </hizkuntzak>
+        <est:gidaBaimena ibilgailua="autoa">B</est:gidaBaimena>
+        <est:jatorrizkoUni></est:jatorrizkoUni>        
+    </est:estoniaIkaslea>
+    
 </erasmus>
