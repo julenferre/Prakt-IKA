@@ -17,10 +17,6 @@ public class Eraldatu {
 
 		String fileName = "output/estonia2letonia.xml";
 
-		if (args.length == 1) {
-			a_doc = args[0];
-		} 
-
 		System.out.println("The input file: "+a_doc);
 		System.out.println("");
 
