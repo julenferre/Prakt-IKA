@@ -15,7 +15,7 @@ public class Bildu {
 	{
 		String[] a_doc;
 
-		String fileName = "output/bilketa.xml";
+		String fileName = "output/bilketa.html";
 
 		if (args.length > 0) {
 			a_doc = new String[args.length];
@@ -53,35 +53,31 @@ public class Bildu {
 		
 		//XQueryko aldagaiei datuen esleipena
 		for(int i = 0; i < a_doc.length; i++){
-			xqueryString += "let $ikasleak"+i+" := doc($adoc"+i+")/*/node()\n";
+			xqueryString += "let $ikasleak"+i+" := doc($adoc"+i+")/*/node()[node()]\n";
 		}
 		
 		//return-aren burua
 		xqueryString += 
 				"return " + 
-				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
-				"    xmlns:era='www.ehu.eus/erasmus'"+
-				"    xmlns='www.ehu.eus/erasmus'>";
+				"<html><body>";
 		
 		//ikasle bakoitzerako kodea
 		for(int i = 0; i < a_doc.length; i++){
 			xqueryString += "{for $i in $ikasleak"+i+" \n"+
-					"		return <ikaslea kodea='{$i/@kodea}' nan='{$i/@nan}' herrialdea='{substring-before(substring-after($adoc"+i+",'/'),'.')}'>\n"+
-					"        	{$i/era:izena}\n"+
-					"        	{$i/era:abizenak}\n"+
-					"        	{$i/era:jaioteguna}\n"+
-					"        	{$i/era:helbidea}\n"+
-					"        	{$i/era:eposta}\n"+
-					"        	{$i/era:telefonoa}\n"+
-					"        	{$i/era:notak}\n"+
-					"        	{$i/era:praktikak}\n"+
-					"       	{$i/era:hizkuntzak}\n"+
-					"   	 </ikaslea>\n"+
-					"	 }\n";
+					"		return <ul>"+
+					/*"		<li>Kodea: {$i/@kodea}</li>"+
+					"		<li>NAN: {$i/@nan}</li>"+*/
+					"		<li>Izen-abizenak: {$i/node()[name()='izena' or substring-after(name(),':')='izena']/text()} {$i/node()[name()='abizenak' or substring-after(name(),':')='abizenak']/text()}</li>"+
+					"		<li>Jaioteguna: {$i/node()[name()='jaioteguna' or substring-after(name(),':')='jaioteguna']/text()}</li>"+
+					"		<li>Hiria: {$i/node()[name()='helbidea' or substring-after(name(),':')='helbidea']/node()[name()='hiria' or substring-after(name(),':')='hiria']/text()}</li>"+
+					"		<li>Herrialdea: {substring-before(substring-after($adoc"+i+",'/'),'.')}</li>"+
+					"		<li>Eposta: {$i/node()[name()='eposta' or substring-after(name(),':')='eposta']/text()}</li>"+
+					"		<li>Telefonoa: {$i/node()[name()='telefonoa' or substring-after(name(),':')='telefonoa']/text()}</li>"+
+					"   </ul>}";
 		}
 		
 		//returnaren amaiera
-		xqueryString += "</era:erasmus>";
+		xqueryString += "</body></html>";
 
 		// System.out.println(xqueryString);
 		System.out.println("______________________________");
