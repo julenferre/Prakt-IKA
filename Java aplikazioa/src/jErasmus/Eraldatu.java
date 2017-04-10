@@ -37,8 +37,8 @@ public class Eraldatu {
 				"return " + 
 				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
 				"    xmlns:era='www.ehu.eus/erasmus'"+
-				"    xmlns='www.ehu.eus/estonia'"+
-				"    xsi:schemaLocation='www.ehu.eus/erasmus estonia.xsd'>"+
+				"    xmlns='www.ehu.eus/letonia'"+
+				"    xsi:schemaLocation='www.ehu.eus/erasmus letonia.xsd'>"+
 				"    "+
 				"    {for $i in $ikasleak\n"+
 				"		return "+
