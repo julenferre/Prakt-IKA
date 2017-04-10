@@ -17,10 +17,6 @@ public class Eraldatu {
 
 		String fileName = "output/estonia2letonia.xml";
 
-		if (args.length == 1) {
-			a_doc = args[0];
-		} 
-
 		System.out.println("The input file: "+a_doc);
 		System.out.println("");
 
@@ -41,8 +37,8 @@ public class Eraldatu {
 				"return " + 
 				"<era:erasmus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"+
 				"    xmlns:era='www.ehu.eus/erasmus'"+
-				"    xmlns='www.ehu.eus/estonia'"+
-				"    xsi:schemaLocation='www.ehu.eus/erasmus estonia.xsd'>"+
+				"    xmlns='www.ehu.eus/letonia'"+
+				"    xsi:schemaLocation='www.ehu.eus/erasmus letonia.xsd'>"+
 				"    "+
 				"    {for $i in $ikasleak\n"+
 				"		return "+
