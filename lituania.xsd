@@ -50,7 +50,7 @@
                     <xsd:element ref="es:jaioteguna" />
                     <xsd:element ref="es:helbidea" />
                     <xsd:element ref="es:eposta" minOccurs="0" maxOccurs="unbounded"/>
-                    <xsd:element ref="es:telefonoa"  minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element ref="es:telefonoa"  minOccurs="1" maxOccurs="unbounded"/>
                     <xsd:element ref="es:notak" />
                     <xsd:element ref="es:hizkuntzak" minOccurs="0"/>
                     <xsd:element ref="es:besteak" minOccurs="0" maxOccurs="unbounded"/>
